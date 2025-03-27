@@ -80,7 +80,7 @@ export default function useRouteElement() {
             </ProtectedRoute>
           ),
         },
-        
+
         {
           path: "profile",
           element: (
@@ -138,7 +138,11 @@ export default function useRouteElement() {
       children: [
         {
           index: true,
-          element: <ProtectedRoute>{/* <Dashboard /> */}</ProtectedRoute>,
+          element: (
+            <ProtectedRoute>
+              <Dashboard />
+            </ProtectedRoute>
+          ),
         },
         {
           path: "user",
